@@ -1,5 +1,5 @@
 export interface MenuModel {
     icon: string,
     name: string,
-    redirecTo: string;
+    redirecto: string;
   }

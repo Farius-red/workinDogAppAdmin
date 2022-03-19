@@ -17,11 +17,15 @@ const routes: Routes = [
   },
 
   {
-    path: '',
-    redirectTo: 'auth',
-    pathMatch: 'full'
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
  
+  {
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full'
+  },
 ];
 
 @NgModule({

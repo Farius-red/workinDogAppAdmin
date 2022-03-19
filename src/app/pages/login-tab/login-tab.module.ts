@@ -1,3 +1,4 @@
+import { InicioPageModule } from './../inicio/inicio.module';
 import { ComponentesModule } from './../../componentes/componentes.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,6 +17,7 @@ import { LoginTabPage } from './login-tab.page';
     IonicModule,
     LoginTabPageRoutingModule,
     ComponentesModule,
+    InicioPageModule
   ],
   declarations: [LoginTabPage]
 })
